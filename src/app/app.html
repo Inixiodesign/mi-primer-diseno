@@ -1,8 +1,10 @@
 
 <style>
 /* Contenedor Principal (Pantalla Completa) */
+
 .main-container {
   display: flex;
+  padding: 0px;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
@@ -68,9 +70,7 @@ button:active {
   transform: scale(0.95);
 }
 
-/* ==========================================
-   ESTILOS PARA MODO OSCURO (Controlados por Angular)
-   ========================================== */
+/* ESTILOS PARA MODO OSCURO (Controlados por Angular)*/
 .main-container.dark-mode {
   background-color: #0f172a;
 }
@@ -105,6 +105,7 @@ button:active {
     <button (click)="cambiarTema()">
       {{ esModoOscuro ? 'Pasar a Modo Claro ☀️' : 'Pasar a Modo Oscuro 🌙' }}
     </button>
+    <p>Versión 2</p>
   </div>
 
 </div>
