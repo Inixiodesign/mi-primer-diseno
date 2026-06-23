@@ -1,0 +1,92 @@
+/* Contenedor Principal (Pantalla Completa) */
+
+.main-container {
+  display: flex;
+  padding: 0px;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f3f4f6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: background-color 0.4s ease;
+}
+
+/* La Tarjeta */
+.profile-card {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  max-width: 350px;
+  transition: background-color 0.4s ease, transform 0.3s ease;
+}
+
+.profile-card:hover {
+  transform: translateY(-5px);
+}
+
+.avatar {
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+
+h2 {
+  margin: 10px 0 5px 0;
+  color: #111827;
+}
+
+.title {
+  color: #4f46e5;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+.bio {
+  color: #4b5563;
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 25px;
+}
+
+/* El Botón Interactuable */
+button {
+  background-color: #111827;
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+/* ESTILOS PARA MODO OSCURO (Controlados por Angular)*/
+.main-container.dark-mode {
+  background-color: #0f172a;
+}
+
+.main-container.dark-mode .profile-card {
+  background-color: #1e293b;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.main-container.dark-mode h2 {
+  color: #ffffff;
+}
+
+.main-container.dark-mode .bio {
+  color: #94a3b8;
+}
+
+.main-container.dark-mode button {
+  background-color: #38bdf8;
+  color: #0f172a;
+}
