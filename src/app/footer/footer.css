@@ -1,0 +1,39 @@
+.site-footer {
+  background-color: #111827;
+  color: #9ca3af;
+  padding: 20px 0;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 14px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-links a {
+  color: #38bdf8;
+  text-decoration: none;
+  margin-left: 15px;
+  transition: color 0.2s;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+}
+
+/* Hacerlo responsivo para pantallas chicas */
+@media (max-width: 600px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
